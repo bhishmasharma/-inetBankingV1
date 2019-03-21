@@ -1,0 +1,36 @@
+//
+test 2 deleted code---
+WebDriver driver;
+	ReadConfig readconfigfile = new ReadConfig();
+AddNewAccount ac;
+
+TC_LoginTest_001 ap=new TC_LoginTest_001();
+
+@Test(priority=2)
+public void tessst() {
+	System.out.println(readconfigfile.getcustid());
+}
+
+
+@Test(priority=1)
+public void login() {
+	try {
+		ap.loginTest();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+@Test(priority=3)
+public void addnewacc() throws Exception
+{
+	AddNewAccount ac=new AddNewAccount(driver);
+	System.out.println("In addaaaaaaaa");
+	Thread.sleep(10000);
+	//ac.Clicknewacc();
+	ac.EnterCustomerId(readconfigfile.getcustid());
+	ac.SelectAccType(readconfigfile.getacctype());
+	ac.AmountToDeposit(readconfigfile.getdeposit());
+	ac.SubmitNewAcc();
+}

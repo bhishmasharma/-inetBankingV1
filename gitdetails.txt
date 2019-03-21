@@ -1,0 +1,3 @@
+C:\Users\Hemant\eclipse-workspace\inetBankingV1>
+mvn clean install
+https://github.com/bhishmasharma/-inetBankingV1.git   -remote repository url

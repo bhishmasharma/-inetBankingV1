@@ -1,0 +1,9 @@
+com\inetBankingV1\pageObjects\AddNewAccount.class
+com\inetBankingV1\utilities\ExcelUtils.class
+com\inetBankingV1\pageObjects\LoginPage.class
+com\inetBankingV1\testcase\testng_rundemo.class
+com\inetBankingV1\utilities\ReadConfig.class
+com\inetBankingV1\utilities\Reporting.class
+com\inetBankingV1\testcase\TC_LoginTest_001.class
+com\inetBankingV1\testcase\BaseClass.class
+com\inetBankingV1\testcase\TC_AddNewAccount_002.class

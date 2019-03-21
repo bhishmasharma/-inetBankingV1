@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [inetBankingV1]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.inetBankingV1.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="Banking App(failed)">
+    <classes>
+      <class name="com.inetBankingV1.testcase.TC_AddNewAccount_002">
+        <methods>
+          <include name="addnewacc"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.inetBankingV1.testcase.TC_AddNewAccount_002 -->
+    </classes>
+  </test> <!-- Banking App(failed) -->
+</suite> <!-- Failed suite [inetBankingV1] -->
